@@ -14,6 +14,7 @@ var _         = require('underscore')
 
 exports.run = function(handler, callback) {
 
+  // 输出DebugLog
   log.debug("param param1 : " + handler.params.param1);
   log.debug("param param2 : " + handler.params.param2);
 

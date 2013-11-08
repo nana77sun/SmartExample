@@ -41,7 +41,6 @@ if ("development" == app.get("env")) {
 }
 
 /* -- sample code start -- */
-// 设定语言
 app.use(middleware.lang);
 /* -- sample code end -- */
 
