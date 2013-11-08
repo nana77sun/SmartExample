@@ -13,8 +13,10 @@ var express     = require("express")
   , log         = smart.core.log
   , routes      = require("./routes");
 
+/* -- sample code start -- */
 /** 初始化smart core依赖的服务 */
 loader.initialize();
+/* -- sample code end -- */
 
 var app = express();
 
@@ -38,8 +40,10 @@ if ("development" == app.get("env")) {
   app.use(express.errorHandler());
 }
 
-// middleware处理
-app.use(middleware.lang);         // 设定语言
+/* -- sample code start -- */
+// 设定语言
+app.use(middleware.lang);
+/* -- sample code end -- */
 
 app.get("/", routes.index);
 app.get("/test.json", routes.test);
